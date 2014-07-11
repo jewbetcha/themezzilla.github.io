@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)http://getbootstrap.com/examples/navbar-fixed-top/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
-
-    <title>Coleman Rollins</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/js.js"></script>
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
-
-  <style type="text/css"></style></head>
-
-  <body style="">
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top navbar-inverse slim" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand smoove" href="index.html">Portfolio</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#top" class="smoove">Home</a></li>
-            <li><a href="#about" class="smoove">About</a></li>
-            <li><a href="#contact" class="smoove">Get In touch</a></li>
-          </ul>
-          
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+  <title>Coleman Rollins</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="http://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+<style type="text/css"></style></head>
+<body style="">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse slim" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand smoove" href="index.html">Portfolio</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#top" class="smoove">Home</a></li>
+          <li><a href="#about" class="smoove">About</a></li>
+          <li><a data-toggle="modal" data-target="#myModal">Get In touch</a></li>
+        </ul>
+        
         </div><!--/.nav-collapse -->
       </div>
     </div>
-
     
     <div class="jumbotron pad" id="top">
       <!-- Main component for a primary marketing message or call to action -->
@@ -52,125 +47,93 @@
         <div class="row">
           <div class="col-md-6 text-right mid">
             <h1>Coleman Rollins</h1>
-              <h3>A Portfolio Website</h3>
+            <h3>A Portfolio Website</h3>
           </div>
           <div class ="col-md-6  text-left">
             <img src="img/helmet.jpg" class="img-rounded">
           </div>
         </div>
-    </div>
-    </div> <!-- /container -->
-
-    <div class="row qwhite-row">
-      <div class="container text-center">
-        <div class="col-lg-4">
-          <span class="glyphicon glyphicon-book big"></span>
+      </div>
+      </div> <!-- /container -->
+      <div class="row qwhite-row">
+        <div class="container text-center">
+          <div class="col-lg-4">
+            <span class="glyphicon glyphicon-user big"></span>
+            <h2>About Me</h2>
+            <p> <a class="btn btn-lg btn-bkg smoove" role="button" href="#about">Learn About Me <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <span class="glyphicon glyphicon-book big"></span>
             <h2>My Resume</h2>
             <p> <a class="btn btn-lg btn-bkg smoove" role="button" href="#resume">View Resume <span class="glyphicon glyphicon-chevron-right"></span></a>
-          </p>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <span class="glyphicon glyphicon-comment big"></span>
+            <h2>Get In Touch</h2>
+            <button class="btn btn-lg btn-bkg" data-toggle="modal" data-target="#myModal">Contact Me <span class="glyphicon glyphicon-chevron-right"></span></button>
+          </div>
         </div>
-        <div class="col-lg-4">
-        <span class="glyphicon glyphicon-user big"></span>
-          <h2>About Me</h2>
-            <p> <a class="btn btn-lg btn-bkg smoove" role="button" href="#about">Learn About Me <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </p>
-      </div> 
-      <div class="col-lg-4">
-        <span class="glyphicon glyphicon-comment big"></span>
-          <h2>Get In Touch</h2>
-            <a class="btn btn-lg btn-bkg smoove" role="button" href="#contact">Contact Me <span class="glyphicon glyphicon-chevron-right"></span></a>
-      </div>  
-    </div>
-    <a name="about" id="about"></a>
-  </div>
-  <div class="container-fluid dkblue">
-    <div class="row featurette text-center pad">
-      <div class="col-md-7 text-right">
-        <h2 class="featurette-heading cap-pad"><span class="text-muted side-cap">Golf.</span>
-        </h2>
-          <p class="lead qwhite">Caption.</p>
-      </div>    
-      <div class="col-md-5 text-left">
-        <img src="img/golf.jpg" class="img-rounded">
+        <a name="about" id="about"></a>
       </div>
-    </div>
-    <hr class="featurette-divider">
-      <div class="row featurette text-center">
-      <div class="col-md-5 text-right">
-        <img src="img/israel.jpg" class="img-rounded">
-      </div>
-      <div class="col-md-7 text-left">
-        <h2 class="featurette-heading cap-pad1"><span class="text-muted side-cap">Israel.</span></h2>
-        <p class="lead qwhite">Caption.</p>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette text-center pad-bot">
-      <div class="col-md-7 text-right">
-        <h2 class="featurette-heading cap-pad"><span class="text-muted side-cap">University of Minnesota.</span>
+      <div class="container-fluid dkblue">
+        <div class="row featurette text-center pad">
+          <div class="col-md-7 text-right">
+            <h2 class="featurette-heading cap-pad"><span class="text-muted side-cap">Golf.</span>
+            </h2>
+            <p class="lead qwhite">Caption.</p>
+          </div>
+          <div class="col-md-5 text-left">
+            <img src="img/golf.jpg" class="img-rounded">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette text-center">
+          <div class="col-md-5 text-right">
+            <img src="img/israel.jpg" class="img-rounded">
+          </div>
+          <div class="col-md-7 text-left">
+            <h2 class="featurette-heading cap-pad1"><span class="text-muted side-cap">Israel.</span></h2>
+            <p class="lead qwhite">Caption.</p>
+          </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette text-center pad-bot">
+          <div class="col-md-7 text-right">
+            <h2 class="featurette-heading cap-pad"><span class="text-muted side-cap">University of Minnesota.</span>
             <p class="lead qwhite">With some words below it</p>
-        </h2>
-      </div>    
-      <div class="col-md-5 text-left">
-        <img src="img/goldy.jpg" class="img-rounded">
+            </h2>
+          </div>
+          <div class="col-md-5 text-left">
+            <img src="img/goldy.jpg" class="img-rounded">
+          </div>
+        </div>
+        <a name="resume" id="resume"></a>
       </div>
-    </div>
-    <a name="resume" id="resume"></a>
-</div>
-
-
-    <div class="row qwhite-row">
-      <div class="container-fluid">
-        <h1 class="text-center"><strong>Work Experience</strong></h1>
-        <div class="col-md-7 pad-right">
-          
-            <div class="row white-row">
-              <div class="white-block">
-                <div class="header-glyph red">
-                  <span class="glyphicon glyphicon-magnet med"></span>
-                </div>
-                <h2 class="exp">
-                  Nova Physics Research Lab
-                </h2>
-              </div>
-                <h3>Research Assistant: February 2012 - June 2012</h3>
-                  <ul class="skill-list">
-                      <li>Assisted in the construction of neutrino detector modules for Fermi Lab: Near Detector experiment</li>
-                      <li>Blah blah blah more stuff</li>
-                  </ul>
-            </div>
+      <div class="row qwhite-row">
+        <div class="container-fluid">
+          <h1 class="text-center"><strong>Work Experience</strong></h1>
+          <div class="col-md-7 pad-right">
+            
             <div class="row white-row">
               <div class="white-block">
                 <div class="header-glyph green">
                   <span class="glyphicon glyphicon-flash med"></span>
                 </div>
-                  <h2 class="exp">
-                    TEN7 Interactive
-                  </h2>
-                </div>
-                <h3>Web Development Intern: Sept. 2012 - January 2013</h3>
+                <h2 class="exp">
+                TEN7 Interactive
+                </h2>
+                <div>
+                  <h3>QA Analyst/DevOps: September 2013 - Present</h3>
                   <ul class="skill-list">
-                      <li>Managed and created content for multiple websites</li>
-                      <li>Troubleshooted existing websites</li>
-                      <li>Helped to maintain and update TEN7 social media accounts</li>
+                    <li>Performed multiple quality assurance tests on websites in development, using various platforms/browsers/operating systems</li>
+                    <li>Maintained and updated production and development servers, as well as Git repositories</li>
+                    <li>Upgraded and troubleshooted Drupal modules on numerous production sites</li>
+                    <li>Blah blah blah development</li>
                   </ul>
-            </div>
-            <div class="row white-row">
-              <div class="white-block">
-                <div class="header-glyph blue">
-                  <span class="glyphicon glyphicon-floppy-disk med"></span>
                 </div>
-                    <h2 class="exp">
-                      University of Minnesota IT Department
-                    </h2>
-                </div>
-                <h3>Service Technician: March 2013 - June 2013</h3>
-                  <ul class="skill-list">
-                      <li>Respond to requests by faculty and staff to troubleshoot various computer related issues</li>
-                      <li>Heled in the ordering and configuring of new equipment for the university</li>
-                      <li>Upgraded and installed new hardware/software on university machines</li>
-                  </ul>
-
+              </div>
             </div>
             <div class="row white-row">
               <div class="white-block">
@@ -178,103 +141,145 @@
                   <span class="glyphicon glyphicon-book med"></span>
                 </div>
                 <h2 class="exp">
-                  Pearson VUE
+                Pearson VUE
                 </h2>
               </div>
-                <h3>Software Quality Assurance Intern: June 2013 - September 2013</h3>
-                  <ul class="skill-list">
-                      <li>Created several automated quality assurance test scenarios to be performed on Pearson VUE products</li>
-                      <li>Determined needs for new areas and scenarios to be tested</li>
-                      <li>Analyzed Java code for defects in automated tests</li>
-                      <li>Worked with a large team in an Agile development environemnt</li>
-                  </ul>
+              <h3>Software Quality Assurance Intern: June 2013 - September 2013</h3>
+              <ul class="skill-list">
+                <li>Created several automated quality assurance test scenarios to be performed on Pearson VUE products</li>
+                <li>Determined needs for new areas and scenarios to be tested</li>
+                <li>Analyzed Java code for defects in automated tests</li>
+                <li>Worked with a large team in an Agile development environemnt</li>
+              </ul>
             </div>
             <div class="row white-row">
               <div class="white-block">
                 <div class="header-glyph green">
                   <span class="glyphicon glyphicon-flash med"></span>
                 </div>
-                  <h2 class="exp">
-                    TEN7 Interactive
-                  </h2>
-              <div>
-                <h3>QA Analyst/Operations/Web Developer: September 2013 - Present</h3>
-                  <ul class="skill-list">
-                      <li>Performed multiple quality assurance tests on websites in development, using various platforms/browsers/operating systems</li>
-                      <li>Maintained and updated production and development servers, as well as Git repositories</li>
-                      <li>Upgraded and troubleshooted Drupal modules on numerous production sites</li>
-                      <li>Blah blah blah development</li>
-                  </ul>
+                <h2 class="exp">
+                TEN7 Interactive
+                </h2>
               </div>
+              <h3>Web Development Intern: Sept. 2012 - January 2013</h3>
+              <ul class="skill-list">
+                <li>Managed and created content for multiple websites</li>
+                <li>Troubleshooted existing websites</li>
+                <li>Helped to maintain and update TEN7 social media accounts</li>
+              </ul>
             </div>
-          </div>    
-
-      </div>
-      <div class="col-md-5">
-        <div class="row white-row">
-          <div class="white-block">
+            <div class="row white-row">
+              <div class="white-block">
+                <div class="header-glyph blue">
+                  <span class="glyphicon glyphicon-floppy-disk med"></span>
+                </div>
+                <h2 class="exp">
+                University of Minnesota IT Department
+                </h2>
+              </div>
+              <h3>Service Technician: March 2013 - June 2013</h3>
+              <ul class="skill-list">
+                <li>Respond to requests by faculty and staff to troubleshoot various computer related issues</li>
+                <li>Heled in the ordering and configuring of new equipment for the university</li>
+                <li>Upgraded and installed new hardware/software on university machines</li>
+              </ul>
+            </div>
+            <div class="row white-row">
+              <div class="white-block">
+                <div class="header-glyph red">
+                  <span class="glyphicon glyphicon-magnet med"></span>
+                </div>
+                <h2 class="exp">
+                Nova Physics Research Lab
+                </h2>
+              </div>
+              <h3>Research Assistant: February 2012 - June 2012</h3>
+              <ul class="skill-list">
+                <li>Assisted in the construction of neutrino detector modules for Fermi Lab: Near Detector experiment</li>
+                <li>Blah blah blah more stuff</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row white-row">
+              <div class="white-block">
                 <div class="header-glyph orange">
                   <span class="glyphicon glyphicon-star-empty med"></span>
                 </div>
-                    <h2 class="exp">
-                      Education & Awards
-                    </h2>
-                </div>
+                <h2 class="exp">
+                Education & Awards
+                </h2>
+              </div>
               <ul class="skill-list">
-                <li>Some Stuff</li>
-                <li>Some Stuff</li>
-                <li>Some Stuff</li>
+                <li>University of Minnesota Evans Scholarship Recipient - Class of '13</li>
+                <li>Bachelors Degree in Physics</li>
+                <li>Dean's List</li>
                 <li>Some Stuff</li>
               </ul>
-          </div>
-        <div class="row white-row">
-          <div class="white-block">
+            </div>
+            <div class="row white-row">
+              <div class="white-block">
                 <div class="header-glyph blue">
                   <span class="glyphicon glyphicon-list med"></span>
                 </div>
-          <h2 class="exp">
-            Skills
-          </h2>
-        </div>
-            <ul class="skill-list">
-              <li>Git, including branches</li>
-              <li>Drupal 6/7</li>
-              <li>Drush</li>
-              <li>HTML 5</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>jQuery</li>
-              <li>Twitter Bootstrap</li>
-              <li>PHP?</li>
-            </ul>
-            <h1>Experience With</h1>
-            <ul class="skill-list">
-              <li>MAMP/WAMP</li>
-              <li>Sequel Pro</li>
-              <li>Basecamp</li>
-              <li>Google Analytics</li>
-            </ul>
+                <h2 class="exp">
+                Skills
+                </h2>
+              </div>
+              <ul class="skill-list">
+                <li>Git, including branches</li>
+                <li>Drupal 6/7</li>
+                <li>Drush</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>jQuery</li>
+                <li>Twitter Bootstrap</li>
+                <li>PHP?</li>
+              </ul>
+              <h1>Experience With</h1>
+              <ul class="skill-list">
+                <li>MAMP/WAMP</li>
+                <li>Sequel Pro</li>
+                <li>Basecamp</li>
+                <li>Google Analytics</li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <a name="contact" id="contact"></a>
       </div>
-    </div>
-    <a name="contact" id="contact"></a>
-   </div> 
-
-
- <div class="fluid-container">
-    <div class="row ltblue-row text-center">
-        <div class="col-md-4 pad text-right">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Get in touch</h4>
+            </div>
+            <div class="modal-body">
+              <h3>Send me an email!</h3>
+              <!-- contact form -->
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+                  <div class="col-sm-10">
+                    <textarea type="text" class="form-control" placeholder="Message" class="form-control" rows="3"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 text-left">
-            <h2 class="featurette-heading">
-                <strong>Contact Info</strong>
-          </h2>
-          <h3><span class="glyphicon glyphicon-envelope"></span> Email Address: crollins199@gmail.com</h3>
-          <h3><span class="glyphicon glyphicon-earphone"></span> Phone Number: 612-840-1222</h3>
-          <h3><span class="glyphicon glyphicon-home"></span> Address: 220 Thomas Ave S, Minneapolis, MN, 55405</h3>
-        </div>
-        <div class="col-md-4"></div>
-    </div>
-  </div>
-
-</body></html>
+      </div>
+    </body></html>
