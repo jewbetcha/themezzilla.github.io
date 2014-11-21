@@ -7,3 +7,8 @@
 .light-blue-text.darken-1 li a {
   color: #0398db;
 }
+
+/* line 7, ../sass/custom.scss */
+.me {
+  border-radius: 50%;
+}
