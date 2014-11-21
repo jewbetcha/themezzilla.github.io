@@ -1,0 +1,9 @@
+/* line 1, ../sass/custom.scss */
+.center {
+  text-align: center;
+}
+
+/* line 4, ../sass/custom.scss */
+.light-blue-text.darken-1 li a {
+  color: #0398db;
+}
