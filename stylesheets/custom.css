@@ -35,3 +35,8 @@ ul.tabs li.tab a {
 ul.tabs li.tab a:hover {
   color: #fb8c00;
 }
+
+/* line 25, ../sass/custom.scss */
+ul.tabs .indicator {
+  background-color: #e68900;
+}
