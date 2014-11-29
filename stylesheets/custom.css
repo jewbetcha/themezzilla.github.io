@@ -27,16 +27,21 @@
 }
 
 /* line 19, ../sass/custom.scss */
+.no-pad {
+  padding: 0;
+}
+
+/* line 22, ../sass/custom.scss */
 ul.tabs li.tab a {
   color: #039be5;
 }
 
-/* line 22, ../sass/custom.scss */
+/* line 25, ../sass/custom.scss */
 ul.tabs li.tab a:hover {
   color: #fb8c00;
 }
 
-/* line 25, ../sass/custom.scss */
+/* line 28, ../sass/custom.scss */
 ul.tabs .indicator {
   background-color: #e68900;
 }
