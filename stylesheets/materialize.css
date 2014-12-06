@@ -445,7 +445,7 @@ li {
 }
 
 /* line 32, ../sass/components/_global.scss */
-.z-depth-1, nav, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, ul.collapsible {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, ul.collapsible {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -6881,47 +6881,102 @@ small {
   }
 }
 
-/* line 9, ../sass/components/_cards.scss */
+/* line 10, ../sass/components/_cards.scss */
+.card-panel {
+  padding: 1rem;
+  margin: 8px 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+/* line 17, ../sass/components/_cards.scss */
 .card {
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
   margin-top: 10px;
 }
-/* line 12, ../sass/components/_cards.scss */
+/* line 23, ../sass/components/_cards.scss */
 .card h1 {
   font-size: 1.71rem;
   color: #fff;
 }
-/* line 16, ../sass/components/_cards.scss */
+/* line 27, ../sass/components/_cards.scss */
 .card h2 {
   font-size: 1.14rem;
   color: #fff;
 }
-/* line 20, ../sass/components/_cards.scss */
+/* line 31, ../sass/components/_cards.scss */
 .card h3 {
   font-size: 1rem;
   color: #fff;
 }
-/* line 24, ../sass/components/_cards.scss */
+/* line 35, ../sass/components/_cards.scss */
 .card p {
   font-size: 0.8rem;
   color: #fff;
 }
-/* line 31, ../sass/components/_cards.scss */
-.card .card-content {
+/* line 40, ../sass/components/_cards.scss */
+.card span.card-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+/* line 48, ../sass/components/_cards.scss */
+.card.small {
+  height: 300px;
+  position: relative;
+}
+/* line 52, ../sass/components/_cards.scss */
+.card.small .card-image {
+  overflow: hidden;
+  height: 150px;
+}
+/* line 56, ../sass/components/_cards.scss */
+.card.small .card-content {
+  overflow: hidden;
+  height: 150px;
+}
+/* line 60, ../sass/components/_cards.scss */
+.card.small .card-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 67, ../sass/components/_cards.scss */
+.card .card-footer {
+  background-color: #FFF;
+  padding: 2px 1rem 16px 1rem;
+  -webkit-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  margin-bottom: 30px;
+}
+/* line 72, ../sass/components/_cards.scss */
+.card .card-footer h1, .card .card-footer h2, .card .card-footer h3, .card .card-footer p {
+  color: #000;
+}
+/* line 77, ../sass/components/_cards.scss */
+.card .card-image {
   position: relative;
   overflow: hidden;
-  padding: 1rem;
 }
-/* line 37, ../sass/components/_cards.scss */
-.card .card-content img {
+/* line 82, ../sass/components/_cards.scss */
+.card .card-image img {
   -webkit-border-radius: 2px 2px 0 0;
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -6929,28 +6984,48 @@ small {
   width: 100%;
   z-index: -1;
 }
-/* line 49, ../sass/components/_cards.scss */
-.card .card-footer {
-  background-color: #FFF;
-  padding: 2px 1rem 8px 1rem;
+/* line 93, ../sass/components/_cards.scss */
+.card .card-image span.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+/* line 102, ../sass/components/_cards.scss */
+.card .card-content {
+  padding: 16px;
   -webkit-border-radius: 0 0 2px 2px;
   -moz-border-radius: 0 0 2px 2px;
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
-  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 54, ../sass/components/_cards.scss */
-.card .card-footer h1, .card .card-footer h2, .card .card-footer h3, .card .card-footer p {
-  color: #000;
+/* line 107, ../sass/components/_cards.scss */
+.card .card-content p {
+  margin: 0;
+  color: inherit;
 }
-/* line 59, ../sass/components/_cards.scss */
-.card a.card-action {
-  margin-right: 20%;
-  color: #ffab2e;
+/* line 111, ../sass/components/_cards.scss */
+.card .card-content span.card-title {
+  line-height: 48px;
 }
-/* line 63, ../sass/components/_cards.scss */
-.card a.card-action:hover {
-  color: #ffcc35;
+/* line 116, ../sass/components/_cards.scss */
+.card .card-action {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  padding: 16px;
+}
+/* line 120, ../sass/components/_cards.scss */
+.card .card-action a {
+  color: color("orange", "accent-2");
+  margin-right: 16px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 /* line 1, ../sass/components/_toast.scss */

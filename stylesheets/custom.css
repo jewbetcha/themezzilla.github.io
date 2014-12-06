@@ -45,3 +45,8 @@ ul.tabs li.tab a:hover {
 ul.tabs .indicator {
   background-color: #e68900;
 }
+
+/* line 31, ../sass/custom.scss */
+.card-footer p {
+  font-size: 15px;
+}
