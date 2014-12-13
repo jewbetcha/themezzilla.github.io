@@ -1,3 +1,8 @@
+$orange: #e68900;
+
+nav ul li:hover {
+	background-color: $orange;
+}
 .center {
 	text-align: center;
 }
@@ -19,14 +24,18 @@
 .no-pad {
 	padding: 0;
 }
-ul.tabs li.tab a {
+ul.tabs {
+	li.tab a {
 	color: #039be5;
-}
-ul.tabs li.tab a:hover {
-	color: #fb8c00;
-}
-ul.tabs .indicator {
-	background-color: #e68900;
+	}
+
+	li.tab a:hover {
+	color: $orange;
+	}
+
+	.indicator {
+	background-color: $orange;
+	}
 }
 .card-footer p {
 	font-size: 15px;

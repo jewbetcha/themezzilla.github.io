@@ -1,19 +1,24 @@
-/* line 1, ../sass/custom.scss */
+/* line 3, ../sass/custom.scss */
+nav ul li:hover {
+  background-color: #e68900;
+}
+
+/* line 6, ../sass/custom.scss */
 .center {
   text-align: center;
 }
 
-/* line 4, ../sass/custom.scss */
+/* line 9, ../sass/custom.scss */
 .light-blue-text.darken-1 li a {
   color: #0398db;
 }
 
-/* line 7, ../sass/custom.scss */
+/* line 12, ../sass/custom.scss */
 .me {
   border-radius: 50%;
 }
 
-/* line 10, ../sass/custom.scss */
+/* line 15, ../sass/custom.scss */
 .brand {
   height: 55px;
   width: 61;
@@ -21,32 +26,30 @@
   padding-top: 4px;
 }
 
-/* line 16, ../sass/custom.scss */
+/* line 21, ../sass/custom.scss */
 .no-marg {
   margin: 0;
 }
 
-/* line 19, ../sass/custom.scss */
+/* line 24, ../sass/custom.scss */
 .no-pad {
   padding: 0;
 }
 
-/* line 22, ../sass/custom.scss */
+/* line 28, ../sass/custom.scss */
 ul.tabs li.tab a {
   color: #039be5;
 }
-
-/* line 25, ../sass/custom.scss */
+/* line 32, ../sass/custom.scss */
 ul.tabs li.tab a:hover {
-  color: #fb8c00;
+  color: #e68900;
 }
-
-/* line 28, ../sass/custom.scss */
+/* line 36, ../sass/custom.scss */
 ul.tabs .indicator {
   background-color: #e68900;
 }
 
-/* line 31, ../sass/custom.scss */
+/* line 40, ../sass/custom.scss */
 .card-footer p {
   font-size: 15px;
 }
