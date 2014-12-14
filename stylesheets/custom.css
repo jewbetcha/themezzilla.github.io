@@ -19,6 +19,18 @@ nav ul li:hover {
 }
 
 /* line 15, ../sass/custom.scss */
+#footer p.foot {
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 400;
+}
+/* line 19, ../sass/custom.scss */
+#footer p.foot a.m {
+  line-height: 25px;
+  color: #e68900;
+}
+
+/* line 24, ../sass/custom.scss */
 .brand {
   height: 55px;
   width: 61;
@@ -26,30 +38,87 @@ nav ul li:hover {
   padding-top: 4px;
 }
 
-/* line 21, ../sass/custom.scss */
+@media (max-width: 485px) {
+  /* line 32, ../sass/custom.scss */
+  .brand {
+    height: 45px;
+    width: 45px;
+    padding-top: 5px;
+  }
+}
+/* line 38, ../sass/custom.scss */
+.twitter-row {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* line 42, ../sass/custom.scss */
 .no-marg {
   margin: 0;
 }
 
-/* line 24, ../sass/custom.scss */
+/* line 45, ../sass/custom.scss */
 .no-pad {
   padding: 0;
 }
 
-/* line 28, ../sass/custom.scss */
+/* line 48, ../sass/custom.scss */
+#tabz .no-pad {
+  padding: 0;
+}
+
+/* line 51, ../sass/custom.scss */
+.ft-btn {
+  padding-right: 17px;
+  padding-left: 17px;
+}
+
+/* line 56, ../sass/custom.scss */
 ul.tabs li.tab a {
   color: #039be5;
 }
-/* line 32, ../sass/custom.scss */
+/* line 60, ../sass/custom.scss */
 ul.tabs li.tab a:hover {
   color: #e68900;
 }
-/* line 36, ../sass/custom.scss */
+/* line 64, ../sass/custom.scss */
 ul.tabs .indicator {
   background-color: #e68900;
 }
 
-/* line 40, ../sass/custom.scss */
+/* line 68, ../sass/custom.scss */
 .card-footer p {
   font-size: 15px;
+}
+
+@media (max-width: 450px) {
+  /* line 74, ../sass/custom.scss */
+  #tabz {
+    display: none;
+  }
+
+  /* line 80, ../sass/custom.scss */
+  #tab1,
+  #tab2,
+  #tab3,
+  #tab4 {
+    display: block !important;
+  }
+}
+/* line 84, ../sass/custom.scss */
+.right {
+  text-align: right;
+}
+
+/* line 87, ../sass/custom.scss */
+.left {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* line 92, ../sass/custom.scss */
+  .left,
+  .right {
+    text-align: center;
+  }
 }

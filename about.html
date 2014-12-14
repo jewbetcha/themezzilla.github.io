@@ -3,14 +3,25 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="stylesheets/custom.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/animate.css" media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+    $(function(){
+    $("#footer").load("footer.html");
+    });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </head>
   <nav class="light-blue darken-1 z-depth-1">
     <div class="container">
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo white-text"><img class="brand" src="img/c.png"></a>
         <ul id="nav-mobile" class="right side-nav">
-          <li><a href="work.html" class="smoove">Work</a></li>
+          <li><a href="work.html">Work</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
@@ -20,37 +31,20 @@
   </nav>
   <div class="col s12">
     <ul class="tabs z-depth-1">
-      <li class="tab col l4"><a href="#tab1">I</a></li>
-      <li class="tab col l4"><a href="#tab2">Do</a></li>
-      <li class="tab col l4"><a href="#tab3">Cool Stuff</a></li>
+      <li class="tab col l4"><a href="#tabA">Bike</a></li>
+      <li class="tab col l4"><a href="#tabB">Computer</a></li>
+      <li class="tab col l4"><a href="#tabC">Israel</a></li>
     </ul>
   </div>
   <body>
     <div class="container">
-      <div id="tab1" class="col s12">Test 1</div>
-      <div id="tab2" class="col s12">Test 2</div>
-      <div id="tab3" class="col s12">Test 3</div>
+      <div id="tabA" class="col s12">Test 1</div>
+      <div id="tabB" class="col s12">Test 2</div>
+      <div id="tabC" class="col s12">Test 3</div>
     </div>
     <!-- footer -->
-    <div class="section light-blue darken-1">
-      <a name="contact"></a>
-      <div class="container">
-        <div class="row center">
-          <div class="col s12 l6">
-            <a href="#" class="waves-effect waves-dark btn orange darken-1"><span>Email</span><i class="mdi-communication-email"></i></a>
-          </div>
-          <div class="col s12 l6">
-            <a href="#" class="waves-effect waves-dark btn orange darken-1"><span>Connect</span><i class="mdi-social-people-outline"></i></a>
-          </div>
-        </div>
-        <div class="row center">
-          <p class="flow-text no-marg"><h6 class="white-text">Created in 2014 by Coleman Rollins</h6></p>
-        </div>
-      </div>
-    </div>
+    <div id="footer"></div>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
-  </body>
 </html>
