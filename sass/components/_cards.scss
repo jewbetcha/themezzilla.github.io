@@ -1,11 +1,6 @@
 $default-color: #00bcd4 !default; 
 $card-padding: 16px !default;
 $footer-font-color: #000 !default;
-$card-color: #FFF;
-$font-color: #fff;
-$footer-font-color: #000;
-$card-link-color: #ffab2e;
-$card-link-hover: #ffcc35;
 
 .card-panel {
   padding: 1rem;
@@ -18,24 +13,7 @@ $card-link-hover: #ffcc35;
   margin-top: 10px;
   @include box-sizing(border-box);
   @include border-radius(2px);
-    margin-top: 10px;
 
-  h1 {
-    font-size: 1.71rem;
-    color: $font-color;
-  }
-  h2 {
-    font-size: 1.14rem;
-    color: $font-color;
-  }
-  h3 {
-    font-size: 1rem;
-    color: $font-color;
-  }
-  p {
-    font-size: 0.8rem;
-    color: $font-color;
-  }
 
   span.card-title {
     color: #fff;
@@ -64,15 +42,7 @@ $card-link-hover: #ffcc35;
       right: 0;
     }
   }
-    .card-footer {
-    background-color: $card-color;
-    padding: 2px $gutter-width $card-padding $gutter-width;
-    @include border-radius(0 0 2px 2px);
-    margin-bottom:30px;
-    h1, h2, h3, p {
-      color: $footer-font-color;
-    }
-  }
+
 
   .card-image {
     position: relative;
@@ -123,6 +93,9 @@ $card-link-hover: #ffcc35;
       @include transition(color .3s ease);
       text-transform: uppercase;
 
-      }
+      &:hover { color: lighten(color("orange", "accent-2"), 20%); }
     }
   }
+
+
+}

@@ -1,5 +1,5 @@
-$button-height: 36px;
-$button-color: $blue;
+$button-height: 36px !default;
+$button-color: color("blue", "base") !default;
 
 // shared styles
 .btn, .btn-flat {
@@ -10,9 +10,10 @@ $button-color: $blue;
   @include border-radius(2px);
   line-height: 36px;
   text-transform: uppercase;
+  border:none;
 }
 // Disabled shared style
-.btn.disabled, .btn-floating.disabled, .btn-large.disabled {
+.btn.disabled, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-floating:disabled {
   background-color: #DFDFDF;
   box-shadow: none;
   color: #9F9F9F;
@@ -26,15 +27,7 @@ $button-color: $blue;
 .btn, .btn-floating, .btn-large, .btn-flat {
   i {
     font-size: 1.3rem;
-    float: left;
     line-height: inherit;
-    margin-right: 15px;    
-
-    &.right {
-      float: right;
-      margin-right: 0;
-      margin-left: 15px;
-    }
   }
 }
 
@@ -49,6 +42,7 @@ $button-color: $blue;
   letter-spacing: .8px;
   @extend .z-depth-1; 
   @include transition(.2s ease-out);
+  cursor: pointer;
 
   &:hover {
     background-color: lighten($button-color, 5%);
@@ -66,10 +60,11 @@ $button-color: $blue;
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: $blue;
+  background-color: $button-color;
   @include border-radius(50%);
   @extend .z-depth-1;  
   @include transition(.3s);
+  cursor: pointer;
 
   i {
     width: inherit;
@@ -81,7 +76,7 @@ $button-color: $blue;
   }
   
   &:hover {
-    @extend .z-depth-2;
+    @extend .z-depth-1-half;
   }
 }
 
@@ -90,6 +85,7 @@ $button-color: $blue;
   box-shadow: none;
   background-color: transparent;
   color: #343434;
+  cursor: pointer;
 
   &.disabled {
     color: lighten(#999, 10%);
@@ -102,6 +98,10 @@ $button-color: $blue;
   @extend .btn;
   height: $button-height * 1.5;
   line-height: 56px;
+
+  i {
+    font-size: 1.6rem;
+  }
 }
 
 

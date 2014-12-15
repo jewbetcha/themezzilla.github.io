@@ -2,10 +2,11 @@
   padding: 0 $gutter-width;
   margin: 0 auto;
   max-width: 1280px;
+  width: 90%;
 }
-@media #{$small-and-up} {
+@media #{$medium-and-up} {
   .container {
-    width: 90%;
+    width: 85%;
   }
 }
 @media #{$large-and-up} {
@@ -19,18 +20,25 @@
 }
 
 .section {
-	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+  &.no-pad {
+    padding: 0;
+  }
+  &.no-pad-bot {
+    padding-bottom: 0;
+  }
+  &.no-pad-top {
+    padding-top: 0;
+  }
 }
 
-.section .row {
-	padding-top: $gutter-width;
-	padding-bottom: $gutter-width;
-}
 
 .row {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 
   // Clear floating children
   &:after {
@@ -40,31 +48,28 @@
   }
 
   .col {
+    @include transition(all .3s);
     float: left;
     @include box-sizing(border-box);
     padding: 0 $gutter-width / 2;
 
-    @media #{$small-and-up} {
-
-      $i: 1;
-      @while $i <= $num-cols {
-        $perc: unquote((100 / ($num-cols / $i)) + "%");
-        &.s#{$i} { 
-          width: $perc; 
-          margin-left: 0;
-        }
-        $i: $i + 1;
-      } 
-      $i: 1;
-      @while $i <= $num-cols {
-        $perc: unquote((100 / ($num-cols / $i)) + "%");
-        &.offset-s#{$i} { 
-          margin-left: $perc; 
-        }
-        $i: $i + 1;
-      } 
-
-    }
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.s#{$i} { 
+        width: $perc; 
+        margin-left: 0;
+      }
+      $i: $i + 1;
+    } 
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
+      &.offset-s#{$i} { 
+        margin-left: $perc; 
+      }
+      $i: $i + 1;
+    } 
 
     @media #{$medium-and-up} {
 
