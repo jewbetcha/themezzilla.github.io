@@ -98,7 +98,33 @@ ul.tabs {
 	height: 41px;
 	margin-left: 10px;
 }
-.card h1 {
-	color: #FFF;
-	font-size: 36px;
+.card { 
+
+	h1 {
+		color: #FFF;
+		font-size: 36px;
+	}
+	.card-image span {
+		color: #FFF;
+		font-size: 36px;
+		font-weight: 400;
+	}
+
+	
+}
+img.developer {
+	height: auto;
+	width: 45% !important; 
+	float: right;
+	z-index: 0 !important; 
+}
+img.sqa {
+	width: 59% !important;
+	float: right;
+	z-index: 0 !important;
+}
+img.phys {
+	z-index: 0 !important;
+	width: 59% !important;
+	float: right; 
 }
