@@ -4940,18 +4940,6 @@ small {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box; }
-  .card-panel h1 {
-    font-size: 1.71rem;
-    color: #fff; }
-  .card-panel h2 {
-    font-size: 1.14rem;
-    color: #fff; }
-  .card-panel h3 {
-    font-size: 1rem;
-    color: #fff; }
-  .card-panel p {
-    font-size: 0.8rem;
-    color: #fff; }
 
 .card {
   margin-top: 10px;
@@ -5028,17 +5016,6 @@ small {
       text-transform: uppercase; }
       .card .card-action a:hover {
         color: #ffd8a6; }
-
-.card-footer {
-  background-color: #FFF;
-  padding: 2px 1rem 16px 1rem;
-  -webkit-border-radius: 0 0 2px 2px;
-  -moz-border-radius: 0 0 2px 2px;
-  border-radius: 0 0 2px 2px;
-  background-clip: padding-box;
-  margin-bottom: 30px; }
-  .card-footer h1, .card-footer h2, .card-footer h3, .card-footer p {
-    color: #000; }
 
 #toast-container {
   display: block;
@@ -6375,3 +6352,5 @@ ul.table-of-contents a {
     opacity: 1; }
   to {
     opacity: 0; } }
+
+/*# sourceMappingURL=materialize.css.map */

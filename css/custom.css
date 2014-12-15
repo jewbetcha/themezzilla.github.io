@@ -24,15 +24,14 @@ nav ul li:hover {
   padding-bottom: 10px;
   padding-top: 4px; }
 
-@media (max-width: 600px) {
+@media (max-width: 485px) {
   .brand {
     height: 45px;
     width: 45px;
     padding-top: 5px; } }
 .twitter-row {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-bottom: 0; }
+  padding-bottom: 0 !important; }
 
 .no-marg {
   margin: 0; }
@@ -77,9 +76,6 @@ ul.tabs .indicator {
   .right {
     text-align: center; } }
 .in {
-  height: 41px;
-  margin-left: 10px; }
+  height: 41px; }
 
-.card h1 {
-  color: #FFF;
-  font-size: 36px; }
+/*# sourceMappingURL=custom.css.map */

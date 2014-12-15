@@ -28,7 +28,7 @@ nav ul li:hover {
 	padding-top: 4px;
 }
 
-@media (max-width: 485px) {
+@media (max-width: 600px) {
 	.brand {
 		height: 45px;
 		width: 45px;
@@ -38,6 +38,7 @@ nav ul li:hover {
 .twitter-row {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
+	margin-bottom: 0;
 }
 .no-marg {
 	margin: 0;
@@ -92,4 +93,12 @@ ul.tabs {
 	.right {
 		text-align: center;
 	}
+}
+.in {
+	height: 41px;
+	margin-left: 10px;
+}
+.card h1 {
+	color: #FFF;
+	font-size: 36px;
 }
