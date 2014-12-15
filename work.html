@@ -1,11 +1,14 @@
 <html>
   <head>
+    <link rel="icon" href="img/c.png">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="stylesheets/custom.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="stylesheets/animate.css" media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
     <script>
     $(function(){
     $("#footer").load("footer.html");
@@ -29,7 +32,7 @@
       </div>
     </div>
   </nav>
-  <body>
+  <body class="">
     <div class="row center fixed" id="tabz">
       <div class="col s12 fixed no-pad">
         <ul class="tabs z-depth-1">
@@ -43,7 +46,7 @@
     <!-- TEN7 -->
     <div class="container">
       <div id="tab1" class="col s12">
-        <div class="section">
+        <div class="section WOW fadeIn" id="sec1">
           <div class="row">
             <h1 class="header light-blue-text darken-1">TEN7 Interactive</h1>
             <div class="row">
@@ -111,7 +114,7 @@
       </div>
       <!-- Pearson -->
       <div id="tab2" class="col s12">
-        <div class="section">
+        <div class="section WOW fadeInUp">
           <div class="row">
             <h1 class="header light-blue-text darken-1">Pearson VUE</h1>
             <div class="row">
@@ -121,7 +124,7 @@
                   <div class="card-image">
                     <img class="sqa" src="img/pearson.jpg">
                     <span class="card-title">Software Quality</br>
-                     Assurance Intern</span>
+                    Assurance Intern</span>
                   </div>
                   <div class="card-footer">
                     <p>June 2013 - September 2013</p>
@@ -152,7 +155,7 @@
       </div>
       <!-- U of M -->
       <div id="tab3" class="col s12">
-        <div class="section">
+        <div class="section WOW fadeInUp">
           <div class="row">
             <h1 class="header light-blue-text darken-1">University of MN - IT Department</h1>
             <div class="row">
@@ -192,7 +195,7 @@
       </div>
       <!-- Education -->
       <div id="tab4" class="col s12">
-        <div class="section">
+        <div class="section WOW fadeInUp">
           <div class="row">
             <h1 class="header light-blue-text darken-1">University of Minnesota</h1>
             <div class="row">
@@ -236,7 +239,5 @@
     <!-- footer -->
     <div id="footer"></div>
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/js.js"></script>
   </body>
 </html>

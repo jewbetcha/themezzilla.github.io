@@ -1,5 +1,5 @@
 nav ul li:hover {
-  background-color: #e68900; }
+  background-color: #64b5f6; }
 
 .center {
   text-align: center; }
@@ -103,3 +103,7 @@ img.phys {
   z-index: 0 !important;
   width: 59% !important;
   float: right; }
+
+#masters,
+#masi {
+  height: 350px; }

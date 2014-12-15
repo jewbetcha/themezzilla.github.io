@@ -1,7 +1,8 @@
 $orange: #e68900;
+$lt-blue: #1e88e5;
 
 nav ul li:hover {
-	background-color: $orange;
+	background-color: #64b5f6;
 }
 .center {
 	text-align: center;
@@ -127,4 +128,8 @@ img.phys {
 	z-index: 0 !important;
 	width: 59% !important;
 	float: right; 
+}
+#masters,
+#masi {
+	height: 350px;
 }
