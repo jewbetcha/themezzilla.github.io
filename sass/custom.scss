@@ -22,9 +22,13 @@ nav ul li:hover {
 		color: #ffb74d;
 	}
 }
+#twitter {
+	width: 50px;
+	height: 41px;
+}
 .brand {
 	height: 55px;
-	width: 61;
+	width: 55px;
 	padding-bottom: 10px;
 	padding-top: 4px;
 }
@@ -128,6 +132,11 @@ img.phys {
 	z-index: 0 !important;
 	width: 59% !important;
 	float: right; 
+}
+img.memeify {
+	z-index: 0 !important;
+	float: right;
+	width: 59% !important;
 }
 #lambeau,
 #masters,
