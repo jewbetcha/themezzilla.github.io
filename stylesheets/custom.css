@@ -147,7 +147,7 @@ ul.tabs .indicator {
   font-weight: 400;
 }
 
-/* line 120, ../sass/custom.scss */
+/* line 121, ../sass/custom.scss */
 img.developer {
   height: auto;
   width: 45% !important;
@@ -155,30 +155,35 @@ img.developer {
   z-index: 0 !important;
 }
 
-/* line 126, ../sass/custom.scss */
+/* line 127, ../sass/custom.scss */
 img.sqa {
   width: 59% !important;
   float: right;
   z-index: 0 !important;
 }
 
-/* line 131, ../sass/custom.scss */
+/* line 132, ../sass/custom.scss */
 img.phys {
   z-index: 0 !important;
   width: 59% !important;
   float: right;
 }
 
-/* line 136, ../sass/custom.scss */
+/* line 137, ../sass/custom.scss */
 img.memeify {
   z-index: 0 !important;
   float: right;
-  width: 59% !important;
+  width: 40% !important;
 }
 
-/* line 141, ../sass/custom.scss */
+/* line 143, ../sass/custom.scss */
 #lambeau,
 #masters,
 #masi {
   height: 350px;
+}
+
+/* line 148, ../sass/custom.scss */
+.wide {
+  width: 100%;
 }

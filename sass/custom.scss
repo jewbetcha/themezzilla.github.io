@@ -117,6 +117,7 @@ ul.tabs {
 
 	
 }
+// Work page images
 img.developer {
 	height: auto;
 	width: 45% !important; 
@@ -136,10 +137,14 @@ img.phys {
 img.memeify {
 	z-index: 0 !important;
 	float: right;
-	width: 59% !important;
+	width: 40% !important;
 }
+// About page images images
 #lambeau,
 #masters,
 #masi {
 	height: 350px;
+}
+.wide {
+	width: 100%;
 }
