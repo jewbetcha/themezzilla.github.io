@@ -1,5 +1,6 @@
 .medium {
-  font-size: 50px; }
+  font-size: 36px;
+  margin-left: 6px; }
 
 .my-grey {
   background-color: #727272 !important; }
@@ -25,8 +26,8 @@ nav ul li:hover {
     color: #FF9800; }
 
 #twitter {
-  width: 50px;
-  height: 41px; }
+  width: 35px;
+  height: 28px; }
 
 .brand {
   height: 50px;
@@ -90,7 +91,7 @@ ul.tabs .indicator {
   .right {
     text-align: center; } }
 .in {
-  height: 41px;
+  height: 29px;
   margin-left: 10px; }
 
 .card h1 {
