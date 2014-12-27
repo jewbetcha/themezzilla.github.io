@@ -1,6 +1,13 @@
-$orange: #e68900;
+$orange: #FF9800;
 $lt-blue: #1e88e5;
+$grey: #727272;
 
+.medium {
+	font-size: 50px;
+}
+.my-grey {
+	background-color: $grey !important;
+}
 nav ul li:hover {
 	background-color: #64b5f6;
 }
@@ -19,7 +26,7 @@ nav ul li:hover {
 	font-weight: 400;
 	a.m {
 		line-height: 25px;
-		color: #ffb74d;
+		color: $orange;
 	}
 }
 #twitter {
@@ -27,17 +34,17 @@ nav ul li:hover {
 	height: 41px;
 }
 .brand {
-	height: 55px;
-	width: 55px;
+	height: 50px;
+	width: 50px;
 	padding-bottom: 10px;
-	padding-top: 4px;
+	padding-top: 7px;
 }
 
 @media (max-width: 600px) {
 	.brand {
 		height: 45px;
 		width: 45px;
-		padding-top: 5px;
+		padding-top: 6px;
 	}
 }
 .twitter-row {
@@ -73,6 +80,9 @@ ul.tabs {
 }
 .card-footer p {
 	font-size: 15px;
+}
+.card-action {
+	color: $orange !important;
 }
 // Query to get rid of tabs at certain width until i can figure out
 // how to make them do it by themselves.
