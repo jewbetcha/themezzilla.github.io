@@ -88,12 +88,6 @@ ul.tabs {
 .card-action {
 	color: $orange !important;
 }
-	#tab1 .active,
-	#tab2 .active,
-	#tab3 .active,
-	a#tab4:active {
-		color: $orange;
-	}
 // Query to get rid of tabs at certain width until i can figure out
 // how to make them do it by themselves.
 @media (max-width: 450px) {

@@ -73,12 +73,6 @@ ul.tabs li.tab a.active {
 .card-action {
   color: #FF9800 !important; }
 
-#tab1 .active,
-#tab2 .active,
-#tab3 .active,
-a#tab4:active {
-  color: #FF9800; }
-
 @media (max-width: 450px) {
   #tabz {
     display: none; }
