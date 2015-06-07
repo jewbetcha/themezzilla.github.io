@@ -2,13 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coleman Rollins&#39; Portfolio</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Portfolio site for Coleman Rollins, Web Developer
 </description>
     <link>http://colemanrollins.io/</link>
     <atom:link href="http://colemanrollins.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jun 2015 12:55:01 -0500</pubDate>
-    <lastBuildDate>Sun, 07 Jun 2015 12:55:01 -0500</lastBuildDate>
+    <pubDate>Sun, 07 Jun 2015 17:06:28 -0500</pubDate>
+    <lastBuildDate>Sun, 07 Jun 2015 17:06:28 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Minneapolis Is Beautiful</title>
+        <description>&lt;p&gt;Today is a beautiful day in Minneapolis. I’ve set up on the bank of lake Calhoun with my bike and my computer to sit and work, and to soak in what is arguably the best time of the year in this city. I’ve spent so much time and effort thinking/worrying/stressing about how I’m going to get TF out of here, that I sometimes forget how great Minneapolis actually is. Don’t get me wrong, I’m still going to move, but I will always have the utmost appreciation for my hometown.&lt;/p&gt;
+
+&lt;p&gt;It’s crazy even thinking about living somewhere else. Crazy and scary, which is why I need to do it. I feel like I’ve hit a plateau that I can’t escape. A plateau in my personal, professional and emotional development that can only be cured by forcing myself out of my comfort zone. I love my friends and my family, but I just can’t get over the feeling that I need a change. It’s really fucking stressful, and every day that goes by where I’m not working towards my goal just stresses me out even more. My Mom and I have talked a lot about this; sometimes we put too much pressure on ourselves, which can be unhealthy. At the same time, it’s hard not to put pressure on myself when I know I have goals out there that I need to reach. Ugh. It’s just one big thing on my mind at all times. Mix in a less-than-ideal work situation with some unhealthy lingering ties in the city and I’m pretty much going insane.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, I’m doing my best to make it happen, and I have some awesome friends and family helping me along the way. Also I just set up a brand new A/C unit in my apartment, so hopefully I wont be going insane AND melting. Next blog post will be about my brand new Pebble Time :), maybe even some pictures and an unboxing video will be in order.&lt;/p&gt;
+
+&lt;p&gt;Coleman&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Jun 2015 00:00:00 -0500</pubDate>
+        <link>http://colemanrollins.io/2015/06/07/some-things.html</link>
+        <guid isPermaLink="true">http://colemanrollins.io/2015/06/07/some-things.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Jekyll FTW</title>
