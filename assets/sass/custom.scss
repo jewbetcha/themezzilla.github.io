@@ -9,9 +9,19 @@ $grey: #727272;
 .my-grey {
 	background-color: $grey !important;
 }
-nav ul li:hover {
-	background-color: #64b5f6;
+nav {
+	// @media (max-width: 992px) {
+	// 	position: fixed;
+	// 	.section {
+	// 		padding-top: 2rem;
+	// 	}
+	// }
+	ul li:hover {
+		background-color: #64b5f6;
+	}
 }
+
+
 .center {
 	text-align: center;
 }
