@@ -1,0 +1,10 @@
+---
+layout: 
+title: Denver and Drupal Camp Colorado
+---
+
+Drupal Camp! My first real “work trip” as a Drupal ambassador to the beautiful, sunny Denver CO. We had pretty incredible weather, in fact it was SO HOT. Jack and I managed to have a pretty great time roaming around Denver. We met tons of people from all different walks of life, while drinking great craft beer and indulging in some legally purchased marijuana. Turns out Denver is pretty similar to Minneapolis! Everyone is nice, pretty attractive/fit and the culture spans a wide range. I’m a fan :)
+
+The camp itself was pretty fun. I was able to attend a good handful of sessions that were very interesting, and provided me with ideas and plans for new tools to use back at home. There are a lot of smart people at Drupal Camp, it definitely provided for some great opportunities to network and branch out as well. I noticed one of the main trends of the camp was a focus on development environments that you can easily replicate across lots of machines, as well as deploy to production environments with ease. Among these tools were Vagrant, docker and a drupal member’s own project called VAMPD. I still don’t really understand what a “container” is, but it was some good stuff to learn about and to possibly introduce into the work flow back at home. 
+
+I really enjoyed being in Denver. It seemed confortable, and easy to navigate. Good beer, good food and views of the mountains at every turn. Everyone who we met on the trip, through the camp or not, was easy to talk to and all had unique stories of their own. After focusing so much of my soul-searching on big-name cities, it was a good experience to check out someplace that might not immedeately come to mind. Denver has lots of qualities that would make it an amazing place to live, but I can’t decide if they would override the desire for a <strong>big city</strong> that I’ve grown to be attached to. Either way, it was a great trip and I see myself visiting Denver again in the not-too-distant future. As I write this, I’m on a plane back to good ol’ Minneapolis where hopefully my Pebble Time will be waiting for me!! Until next time :)

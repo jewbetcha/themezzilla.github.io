@@ -1,105 +1,30 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coleman Rollins&#39; Portfolio</title>
-    <description>Portfolio site for Coleman Rollins, Web Developer
-</description>
-    <link>http://colemanrollins.io/</link>
-    <atom:link href="http://colemanrollins.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Aug 2015 21:57:02 -0500</pubDate>
-    <lastBuildDate>Sat, 01 Aug 2015 21:57:02 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
-    
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for post in site.posts limit:10 %}
       <item>
-        <title>Mid Summer Update</title>
-        <description>&lt;p&gt;It seems like summer is flying by, as August is approaching quite quickly. I haven’t written in a month, so here are some things that I’ve been thinking about. Not really in any particular order or genre.&lt;/p&gt;
-
-&lt;p&gt;I started work on a project with one of my best friends Max, and a really smart friend of his, Jake,  who’s an aspiring web guy as well. So far it has been awesome, and I have enjoyed having something cool and different going on outside of work. I have had the chance to be around some seriously smart people, and contribute to an idea that could change the world (seriously!). Jake and I will be charged with creating the site for the project, which I know will be SICK. I can’t wait to work on it and have it done for everyone to see. Even if the project ends there, it’s gonna be an amazing experience.&lt;/p&gt;
-
-&lt;p&gt;After just over one month with my Pebble Time, I have a solid verdict: it’s aight. Some of the novelty wore off after about week two or maybe 1.5. I have however, had a handful of times where I was happy to have it. For example: I was biking around and drinking on the 4th of July, and having the Pebble allowed me to monitor my phone with ease while at the same time save lots of (phone) battery by not having to check it all the damn time. Also, the Time battery is just obscene, it never runs out. With all that being said, the majority of my time is spent either at work, at home, or at the gym. Two out of three of those locations I essentially don’t need my watch for the time or the notifications, and the third I really don’t want a watch at all. It feels like since it’s a smartwatch I should be using it ALL the time, but I’m really not. It’s mostly a watch.&lt;/p&gt;
-
-&lt;p&gt;There have been a good number of ups and downs this summer, but I like where things are going at the moment. I’m really enjoying being active on coding projects outside of work, I needed that. For the time being, I’m going to keep grindin on the keyboard, keep grindin in the gym, and enjoy the final weeks of summer.&lt;/p&gt;
-
-&lt;p&gt;Cheers,&lt;/p&gt;
-
-&lt;p&gt;Coleman&lt;/p&gt;
-</description>
-        <pubDate>Tue, 28 Jul 2015 00:00:00 -0500</pubDate>
-        <link>http://colemanrollins.io/2015/07/28/summer-update.html</link>
-        <guid isPermaLink="true">http://colemanrollins.io/2015/07/28/summer-update.html</guid>
-        
-        
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% for tag in post.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+        {% for cat in post.categories %}
+        <category>{{ cat | xml_escape }}</category>
+        {% endfor %}
       </item>
-    
-      <item>
-        <title>Pebble Time Review</title>
-        <description>&lt;p&gt;It’s finally here! After waiting SO LONG for my Pebble Time, my Kickstarter project has arrived. So far, I really love having the watch, and I’ll be updating my experiences with it here in this post.&lt;/p&gt;
-
-&lt;p&gt;Thoughts after one day: It’s seriously a great watch. It’s comfortable, attractive to look at, and has a nice and slim/light feel on my arm. So far, a very well designed piece of hardware. My initial feelings on the UI are pretty positive. Everything is snappy and quick, while the animations are smooth and I really don’t mind them at all, especially because there is a small animation for just about everything you do with the Time. I’ve been changing my watch face about every two hours, just because there are so many good ones. I go back and forth between attractive, simple faces with just the time, to complex and geeky ones that give you tons of info like weather and battery charge. The screen is a little tough to get used to. It is admittedly dim indoors, but I haven’t had any instances where I had to strain to read what was on it. Outside in the sun it’s simply stunning. I love looking at it outside. The coolest thing I did today on my Time was when I was receiving some group texts, and I was able to quickly respond with a custom entry of “Word” to a message. I was able to do this in mere seconds, while waiting at a stoplight in my car. Really cool, love that. I’m excited to use it some more.&lt;/p&gt;
-
-&lt;p&gt;Thoughts after three days: I still really enjoy the Pebble Time, everything I said before is still true. I’m a big fan of not having to take out my phone every time I want to check a notification, and the vibration on the Time is always noticable right away. I ended up muting notifications for apps that I can’t interact with on the time however, such as Snapchat and Instagram. I played around with some new straps as well, I have a NATO on there right now which I really like (however the stock strap is really nice).&lt;/p&gt;
-
-&lt;p&gt;I do have a couple gripes: if you’re on your phone when you get a notification, even if you dismiss it on there, you still have to dismiss it on the Time as well (or wait for it to go away). Also, if you dismiss a text (or any notification) right away, there’s no way of intacting with it later. So if you don’t respond to something immedeately, you’re going to have to use your phone. I also wish there was a “do not disturb” mode that you could set for a period of time, or indefinitely. Take today for example: I was in a coding workshop all day, where I had a laptop and my phone right in front of me. Every time I got a notification, my phone AND my Time would buzz, and I’d have to dismiss it on each device (not mandatory, but I’m weird about that). That was a little annoying. I’m hopeful that all of these small inconveniences will be solved by later software updates from the Pebble team.&lt;/p&gt;
-
-&lt;p&gt;Thats it until next time!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 25 Jun 2015 00:00:00 -0500</pubDate>
-        <link>http://colemanrollins.io/2015/06/25/pebble-time-review.html</link>
-        <guid isPermaLink="true">http://colemanrollins.io/2015/06/25/pebble-time-review.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Denver and Drupal Camp Colorado</title>
-        <description>&lt;p&gt;Drupal Camp! My first real “work trip” as a Drupal ambassador to the beautiful, sunny Denver CO. We had pretty incredible weather, in fact it was SO HOT. Jack and I managed to have a pretty great time roaming around Denver. We met tons of people from all different walks of life, while drinking great craft beer and indulging in some legally purchased marijuana. Turns out Denver is pretty similar to Minneapolis! Everyone is nice, pretty attractive/fit and the culture spans a wide range. I’m a fan :)&lt;/p&gt;
-
-&lt;p&gt;The camp itself was pretty fun. I was able to attend a good handful of sessions that were very interesting, and provided me with ideas and plans for new tools to use back at home. There are a lot of smart people at Drupal Camp, it definitely provided for some great opportunities to network and branch out as well. I noticed one of the main trends of the camp was a focus on development environments that you can easily replicate across lots of machines, as well as deploy to production environments with ease. Among these tools were Vagrant, docker and a drupal member’s own project called VAMPD. I still don’t really understand what a “container” is, but it was some good stuff to learn about and to possibly introduce into the work flow back at home.&lt;/p&gt;
-
-&lt;p&gt;I really enjoyed being in Denver. It seemed confortable, and easy to navigate. Good beer, good food and views of the mountains at every turn. Everyone who we met on the trip, through the camp or not, was easy to talk to and all had unique stories of their own. After focusing so much of my soul-searching on big-name cities, it was a good experience to check out someplace that might not immedeately come to mind. Denver has lots of qualities that would make it an amazing place to live, but I can’t decide if they would override the desire for a &lt;strong&gt;big city&lt;/strong&gt; that I’ve grown to be attached to. Either way, it was a great trip and I see myself visiting Denver again in the not-too-distant future. As I write this, I’m on a plane back to good ol’ Minneapolis where hopefully my Pebble Time will be waiting for me!! Until next time :)&lt;/p&gt;
-</description>
-        <pubDate>Tue, 23 Jun 2015 00:00:00 -0500</pubDate>
-        <link>http://colemanrollins.io/2015/06/23/Denver-and-drupal-camp.html</link>
-        <guid isPermaLink="true">http://colemanrollins.io/2015/06/23/Denver-and-drupal-camp.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Minneapolis Is Beautiful</title>
-        <description>&lt;p&gt;Today is a beautiful day in Minneapolis. I’ve set up on the bank of lake Calhoun with my bike and my computer to sit and work, and to soak in what is arguably the best time of the year in this city. I’ve spent so much time and effort thinking/worrying/stressing about how I’m going to get TF out of here, that I sometimes forget how great Minneapolis actually is. Don’t get me wrong, I’m still going to move, but I will always have the utmost appreciation for my hometown.&lt;/p&gt;
-
-&lt;p&gt;It’s crazy even thinking about living somewhere else. Crazy and scary, which is why I need to do it. I feel like I’ve hit a plateau that I can’t escape. A plateau in my personal, professional and emotional development that can only be cured by forcing myself out of my comfort zone. I love my friends and my family, but I just can’t get over the feeling that I need a change. It’s really fucking stressful, and every day that goes by where I’m not working towards my goal just stresses me out even more. My Mom and I have talked a lot about this; sometimes we put too much pressure on ourselves, which can be unhealthy. At the same time, it’s hard not to put pressure on myself when I know I have goals out there that I need to reach. Ugh. It’s just one big thing on my mind at all times. Mix in a less-than-ideal work situation with some unhealthy lingering ties in the city and I’m pretty much going insane.&lt;/p&gt;
-
-&lt;p&gt;Thankfully, I’m doing my best to make it happen, and I have some awesome friends and family helping me along the way. Also I just set up a brand new A/C unit in my apartment, so hopefully I wont be going insane AND melting. Next blog post will be about my brand new Pebble Time :), maybe even some pictures and an unboxing video will be in order.&lt;/p&gt;
-
-&lt;p&gt;Coleman&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Jun 2015 00:00:00 -0500</pubDate>
-        <link>http://colemanrollins.io/2015/06/07/some-things.html</link>
-        <guid isPermaLink="true">http://colemanrollins.io/2015/06/07/some-things.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Jekyll FTW</title>
-        <description>&lt;p&gt;Whoooo hooooo! To anyone reading this, you’re seeing the fruits of my most recent weekend project. I’ve completely rebuilt my site using an awesome static site generator tool called Jekyll. It probably doesn’t look very different from the outside, but it’s all new! This site is hosted on GitHub-Pages, which means there isn’t any possibility for server-side template/CMS tools such as Flask, which I had originally planned on using. Since I don’t want to pay for hosting and move all my stuff, I had to check out Jekyll.&lt;/p&gt;
-
-&lt;p&gt;At the inception of my portfolio site I had written it ALL by hand, which included a ton of boilerplate HTML. I didn’t know any other way to successfully host my site on gh-pages. Obviously this wasn’t ideal, and made it a pain in the ass to update or modify in any way. Thankfully, there was Jekyll. Jekyll uses the Liquid templating system to give you the freedom to create layouts/variables for different types of content and simply add each piece using markdown. Not to mention you can “include” chunks of HTML incredibly easily, which eliminated the need to update the head/header on EVERY page if one stylesheet or js file needed to be added. Jekyll is built with Ruby and simply spits out your site as static files using the command line. Highly recommend!&lt;/p&gt;
-
-&lt;p&gt;ALSO. Now that I can add content this easily, I’ve decided to start a blog section for my site. I’m not really sure what kinds of things I’m going to post about, but it will include cool new coding things I’m trying out, tech reviews (I’m getting the Pebble Time soon :) ) and random feels. Keep an eye out!&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Coleman&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 24 May 2015 00:00:00 -0500</pubDate>
-        <link>http://colemanrollins.io/2015/05/24/jekyll-ftw.html</link>
-        <guid isPermaLink="true">http://colemanrollins.io/2015/05/24/jekyll-ftw.html</guid>
-        
-        
-      </item>
-    
+    {% endfor %}
   </channel>
 </rss>
