@@ -122,6 +122,11 @@ ul.tabs {
 		text-align: center;
 	}
 }
+@media only screen and (max-width: 450px) {
+	.card-title {
+		font-size: 20px !important;
+	}
+}
 .in {
 	height: 29px;
 	margin-left: 10px;
@@ -143,7 +148,7 @@ ul.tabs {
 // Work page images
 img.developer {
 	height: auto;
-	width: 45% !important;
+	width: 40% !important;
 	float: right;
 	z-index: 0 !important;
 }
